@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Custom CSS */
+.input {
+    @apply mt-1 px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400;
+}
+.input:focus {
+    @apply outline-none border-sky-500 ring-1 ring-sky-500;
+}
+.input:disabled {
+    @apply bg-slate-50 text-slate-500 border-slate-200 shadow-none;
+}
+.input:invalid {
+    @apply border-pink-500 text-pink-600;
+}
+.input:focus:invalid {
+    @apply focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+}
+
+.label{
+    @apply block text-sm font-medium text-slate-700;
+}
