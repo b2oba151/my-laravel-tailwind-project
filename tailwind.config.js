@@ -818,11 +818,11 @@ export default {
       150: '1.5',
     },
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1536px',
+      tablet: '640px',
+      laptop: '768px',
+      desktop   : '1024px',
+      '2k': '1280px',
+      '3k': '1536px',
     },
     scrollMargin: ({ theme }) => ({
       ...theme('spacing'),
@@ -1061,6 +1061,15 @@ export default {
       30: '30',
       40: '40',
       50: '50',
+    },
+    // Extension (personalisation)
+    extend: {
+      spacing: {
+        '13': '3.25rem',
+        '15': '3.75rem',
+        '128': '32rem',
+        '144': '36rem',
+      }
     },
   },
   plugins: [],
