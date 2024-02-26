@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/taillwind', function () {
+    return view('welcome');
+});
+
+Route::get('/vanilla', function () {
+    return view('welcome_vanilla_css');
+});
